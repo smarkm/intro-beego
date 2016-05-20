@@ -12,5 +12,5 @@ func (c *HelloController) Hello() {
 	key := c.GetString("key", "def")
 	println(key)
 	c.Data["json"] = "hello message from server for "+key
-	c.ServeJson()
+	c.ServeJSON()
 }
